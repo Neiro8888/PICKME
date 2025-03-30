@@ -5,7 +5,7 @@ import os
 import random
 app = QApplication([])
 main_win = QWidget()
-main_win.setWindowTitle('Здоровье')
+main_win.setWindowTitle('Результат')
 main_win.resize(600,300)    
 linev =  QVBoxLayout()
 line1 =  QVBoxLayout()
