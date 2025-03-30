@@ -6,7 +6,7 @@ import random
 app = QApplication([])
 main_win = QWidget()
 main_win.setWindowTitle('132')
-main_win.resize(600,300)
+main_win.resize(600,400)
 cmd = 'python second_win.py'
 def start2():
     main_win.hide()
