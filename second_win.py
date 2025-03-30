@@ -12,7 +12,10 @@ line1 =  QVBoxLayout()
 line2 =  QVBoxLayout()
 line3 =  QVBoxLayout()
 line4 =  QVBoxLayout()
-
+cmd = 'python final_win.py'
+def start2():
+    main_win.hide()
+    os.system(cmd)
 text = QLabel("Введите Ф.И.О")
 pole1 = QLineEdit()
 text1 = QLabel('Кол-во полных лет')
@@ -44,7 +47,7 @@ line1.addWidget(pole4, alignment=Qt.AlignLeft)
 line1.addWidget(pole5, alignment=Qt.AlignLeft)
 
 button = QPushButton("Отправить результаты")
-
+button.clicked.connect(start2)
 button.text()
 line4.addWidget(button, alignment=Qt.AlignCenter)
 
